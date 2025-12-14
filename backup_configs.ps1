@@ -99,7 +99,7 @@ if ($Mode -eq "pull") {
         # Get all items in Repo EXCEPT the .git folder
         $RepoItems = Get-ChildItem -Path $RepoPath -Exclude ".git"
 
-        foreach ($item in RepoItems) {
+        foreach ($item in $RepoItems) {
             Write-Host " > Syncing $($item.Name)..."
             # Copy to Public (Create Public root if missing)
             if (-not (Test-Path $PublicPath)) { New-Item -ItemType Directory -Path $PublicPath | Out-Null }
