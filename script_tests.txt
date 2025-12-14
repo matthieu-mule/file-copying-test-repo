@@ -25,5 +25,6 @@ Things to test:
 10. Create a nested subdirectory with a file, and push to see if the script creates the subfolder
     - This file and the new folder created were pushed successfully
 11. Create a folder outside of what is allowed in this script (ex: app4)
-    - 
+    - Changed my code to allow it to scan all files and folders in the config_files folder
 12. Empty folders
+    - 
