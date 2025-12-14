@@ -1,0 +1,29 @@
+Things to test:
+
+1. Tested and works as intended - Pushing new files from the local folder to the git repo
+    - First main functionality
+
+2. Tested and works as intended - Pulling new files from the git repo to the local folder
+    - Second main functionality
+3. Tested and works as intended - Renaming a file and pushing it to repo
+    - Should push the file as a new file
+    - The GUI showing the changes made should have 2 rows: file deleted, and new file
+4. Tested and works as intended - Renaming a file and pulling from repo
+    - Should now have 2 instances of that file, but under 2 different names
+5. Tested and works as intended - Deleting a file and pushing it to the repo
+    - Should delete the file from the repo
+6. Tested and works as intended - Modifying an existing file and pushing it
+    - Should modify the file in the git repo, without adding or deleting any other files
+7. Tested and works as intended - Make a change to an existing file and pull instead of pushing 
+    - This will squash/overwrite the changes made to the existing files, and sync the local (public config files) directory to the file system of the git repo
+    - Need to be careful about this one!
+    - Added a warning that also scans the files edited and tells the user which files they edited and forgot to push
+8. Tested and works as intended - Only select one of the files that you changed
+    - The other one stays modified, and you get the warning created from step 7
+9. Tested and works as intended - Push then cancel
+    - The git push does not go through and the user gets a cancellation message
+10. Create a nested subdirectory with a file, and push to see if the script creates the subfolder
+    - This file and the new folder created were pushed successfully
+11. Create a folder outside of what is allowed in this script (ex: app4)
+    - 
+12. Empty folders
